@@ -2,6 +2,7 @@ package com.pandev.bot.repository;
 
 import com.pandev.bot.entity.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,6 +13,7 @@ import java.util.Optional;
  * Этот интерфейс расширяет JpaRepository, что позволяет выполнять стандартные операции с сущностью Category
  * (например, сохранение, удаление, поиск и т.д.). Также определяет дополнительные методы для работы с категориями.
  */
+@Repository
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
     /**
